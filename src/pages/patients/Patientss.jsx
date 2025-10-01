@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import API from "../../api/axios";
 import { Link } from "react-router-dom";
 
-const Patients = () => {
+const Patientss= () => {
   const [patients, setPatients] = useState([]);
 
   useEffect(() => {
@@ -46,4 +46,4 @@ const Patients = () => {
   );
 };
 
-export default Patients;
+export default Patientss;

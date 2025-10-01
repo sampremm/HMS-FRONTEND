@@ -5,7 +5,7 @@ import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import Login from "./pages/auth/Login.jsx";
 import Register from "./pages/auth/Register.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
-import Patients from "./pages/Patients/Patients.jsx";
+import Patients from "./pages/Patients/Patientss.jsx";
 import AddPatient from "./pages/Patients/AddPatient.jsx";
 import DoctorPatients from "./pages/Doctors/DoctorPatients.jsx";
 import AddTreatment from "./pages/Doctors/AddTreatment.jsx";
