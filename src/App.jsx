@@ -5,7 +5,7 @@ import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import Login from "./pages/auth/Login.jsx";
 import Register from "./pages/auth/Register.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
-import Patients from "./pages/Patients/patients.jsx"; // exactly this
+import Patient from "./pages/Patients/Patient.jsx"
 import AddPatient from "./pages/Patients/AddPatient.jsx";
 import DoctorPatients from "./pages/Doctors/DoctorPatients.jsx";
 import AddTreatment from "./pages/Doctors/AddTreatment.jsx";
@@ -22,7 +22,7 @@ function App() {
         <Route path="/register" element={<Register />} />
 
         <Route path="/" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-        <Route path="/patients" element={<ProtectedRoute roles={["ADMIN","RECEPTION"]}><Patients /></ProtectedRoute>} />
+        <Route path="/patients" element={<ProtectedRoute roles={["ADMIN","RECEPTION"]}><Patient /></ProtectedRoute>} />
         <Route path="/patients/add" element={<ProtectedRoute roles={["ADMIN","RECEPTION"]}><AddPatient /></ProtectedRoute>} />
         <Route path="/doctors" element={<ProtectedRoute roles={["DOCTOR","ADMIN"]}><DoctorPatients /></ProtectedRoute>} />
         <Route path="/doctors/:patientId/add-treatment" element={<ProtectedRoute roles={["DOCTOR"]}><AddTreatment /></ProtectedRoute>} />
